@@ -33,7 +33,7 @@
 
 + (instancetype)menuTitle:(NSString *)title WithIcon:(UIImage *)icon {
     YCXMenuItem *item = [[YCXMenuItem alloc] init:title image:icon tag:0 userInfo:nil target:nil action:NULL];
-    item.showSelected = NO;
+    item.showSelected = true;
     item.alignment = NSTextAlignmentCenter;
     return item;
 }
